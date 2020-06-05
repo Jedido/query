@@ -1,9 +1,9 @@
 # Query!
-This project was made as a creative project in CSE 154. It uses SQL and PHP to query an online* database to solve a puzzle.
+This project was made as a creative project in CSE 154. It uses SQL and PHP to query an online* database to solve a puzzle. <br />
 *The database isn't actually online; it uses a database that must be initialized via setup.sql.
 
 ## Getting Started
-Required: MAMP (Mac)/WAMP (Windows)
+Required: MAMP (Mac)/WAMP (Windows)<br/>
 Use phpMyAdmin to run setup.sql. Drop the repository into the www/ folder of MAMP/WAMP, and navigate to it (via localhost).
 
 ## Credits
