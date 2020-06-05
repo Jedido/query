@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<!--
+  Jed Chen
+  May 30, 2019
+  Section AG
+
+  This is the index.html, the main page of the website. This is a query game.
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js"></script>
+    <title>Query</title>
+</head>
+
+<body>
+    <main>
+        <article>
+            <section id="query-view">
+                <button id="query-btn">Query!</button>
+                <br>
+                <div id="query">
+                    <label>SELECT</label>
+                    <input id="SELECT" type="text" autocomplete="off" value="*" disabled>
+                    <label>FROM</label>
+                    <input id="FROM" type="text" autocomplete="off" value="Names" disabled>
+                    <label>WHERE</label>
+                    <input id="WHERE" type="text" autocomplete="off" value="1" disabled>
+                    <label>ORDER BY</label>
+                    <input id="ORDER-BY" type="text" autocomplete="off" value="1" disabled>
+                    <label>LIMIT</label>
+                    <input id="LIMIT" type="number" autocomplete="off" value="3" disabled>
+                    <button id="reset-btn">reset current query</button>
+                </div>
+            </section>
+            <section id="table-view">
+                <h3>Query Result</h3>
+                <table id="table">
+                </table>
+                <p id="prompt">Nothing to display. Click Query! to begin.</p>
+            </section>
+            <section id="password-view">
+                <label>Enter a password: </label>
+                <input id="password" type="text" autocomplete="off">
+                <button id="password-btn">Submit</button>
+            </section>
+        </article>
+        <footer>
+            <details>
+                <summary>Help</summary>
+                <h3>How does this work?</h3>
+                <p>Click the Query! button at the top of the page. The SQL query below it will then execute.</p>
+                <h3>What is a SQL Query?</h3>
+                <p>A SQL query looks up information from a database, given some filters (or clauses). In this game, we use the following 5:</p>
+                <ul>
+                    <li>SELECT - chooses which columns (by the column name) to display. E.g. SELECT name,size</li>
+                    <li>FROM - chooses which table to look for data in. E.g. FROM Names</li>
+                    <li>WHERE - filters results by a certain criteria. =, >, &lt;, &lt;=, >= are all valid comparators. E.g. size>4</li>
+                    <li>ORDER BY - sorts the results by a column (given by column name). E.g. ORDER BY size</li>
+                    <li>LIMIT - limits the number of results shown. E.g. LIMIT 10</li>
+                </ul>
+                <p>This is the extent of SQL knowledge you'll need to solve all the puzzles.</p>
+                <h3>What is a database?</h3>
+                <p>A database is a collection of tables. Each table will have entries that have each of the table's specified values. For example, the first table you will see in the game is called Names, and the two values each entry in the table has is
+                    name and size.</p>
+                <h3>Error messages</h3>
+                <p>If an error message pops up, please make sure that there are no spaces in the query. This error message will also pop up if no rows matching the query are found.</p>
+            </details>
+        </footer>
+    </main>
+</body>
+
+</html>

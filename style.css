@@ -1,0 +1,139 @@
+/*
+  Jed Chen
+  May 30, 2019
+  Section AG
+
+  The general style sheet for the Query game.
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Cutive+Mono&display=swap');
+
+/* Container Styles */
+
+body {
+    font-family: 'Cutive Mono', monospace;
+    background-color: #222;
+    text-align: center;
+    margin: 0;
+}
+
+footer {
+    background-color: #222;
+    text-align: left;
+}
+
+details {
+    width: 90%;
+    margin: auto;
+}
+
+summary {
+    outline: none;
+}
+
+summary::selection {
+    background-color: none;
+}
+
+main {
+    margin: auto;
+    min-width: 800px;
+    height: 100%;
+    background-color: white;
+    color: white;
+}
+
+#query-view {
+    background-color: #903030;
+}
+
+#table-view {
+    color: black;
+}
+
+#password-view {
+    background-color: #222;
+}
+
+section {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+
+/* Table Styles */
+
+table {
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 5px;
+    padding-left: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #eee;
+}
+
+th {
+    background-color: #903030;
+    color: white;
+    height: 2em;
+}
+
+
+/* Input Styles */
+
+input {
+    font-family: inherit;
+    background-color: inherit;
+    padding: 3px;
+    border: none;
+    border-bottom: solid 1px white;
+    color: white;
+    width: 80px;
+}
+
+input:disabled {
+    background: inherit;
+    border: none;
+}
+
+#password {
+    width: 100px;
+}
+
+
+/* Button Styles */
+
+button {
+    font-family: inherit;
+    background-color: inherit;
+    border-radius: 3px;
+    border: solid 2px white;
+    color: inherit;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:focus,
+input:focus {
+    outline: none;
+}
+
+#query-btn {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 3em;
+}
+
+.hidden {
+    display: none;
+}
